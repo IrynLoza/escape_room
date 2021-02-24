@@ -67,18 +67,24 @@ includes: handle, keypad*/
     width: 20px;
     height: 30px;
     border: 1px solid white;
-    background: black;
     position: absolute;
     left: 1%;
     top: 15%;
 }
-/*Note
-wall*/ 
+
+
+/*Notes
+includes: wall*/ 
+
+p {
+    font: italic 15px sans-serif;
+    color: white;
+    text-align: center;
+}
+
 #wall-note {
     width: 100px;
     height: 100px;
-    border: 5px solid white;
-    background: black;
     bottom: 180px;
     position: absolute;
     right: 270px;
@@ -101,22 +107,32 @@ wall*/
     height: 170px;
     border-radius: 75%;
     border: 5px solid white;
-    background: black;
     bottom: 5%;
     position: absolute;
     right: 6%;
     
 }
 
+.mirror {
+    position: absolute;
+    border-radius: 75%;
+    width: 120px;
+    height: 170px;
+}
+
 /*Picture*/
 #picture {
-    width: 150px;
-    height: 120px;
-    border: 5px solid white;
-    background: black;
+    width: 140px;
+    height: 110px;
     bottom: 180px;
+    border: 5px solid white;
     position: absolute;
     right: 655px;
+}
+
+.picture {
+    width: 140px;
+    height: 110px;
 }
 
 /*Sofa*/
