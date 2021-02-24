@@ -1,3 +1,187 @@
+/* Objects in a room
+
+door
+door handle 
+door keypad
+mirror
+sofa
+left sofa pillow
+right sofa pillow
+note under left sofa pillow
+picture
+note under picture
+lamp
+wall note 
+
+*/
+
 body {
     background-color: black;
 }
+
+/*Door 
+includes: handle, keypad*/
+
+#door {
+    width: 180px;
+    height: 380px;
+    position: absolute;
+    right: 50px;
+    bottom: 2px;
+    border: 5px solid white;
+    background: black;
+}
+
+#handle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 3px solid white;
+    background: black;
+    position: absolute;
+    bottom: 50%;
+    left: 5%;
+}
+
+#keypad {
+    width: 25px;
+    height: 40px;
+    border: 2px solid white;
+    background: black;
+    position: absolute;
+    bottom: 32%;
+    left: 3%;
+}
+
+#input {
+    width: 20px;
+    height: 5px;
+    border: 1px solid white;
+    background: black;
+    position: absolute;
+    left: 1%;
+    top: 3%;
+}
+
+#pad {
+    width: 20px;
+    height: 30px;
+    border: 1px solid white;
+    background: black;
+    position: absolute;
+    left: 1%;
+    top: 15%;
+}
+/*Note
+wall*/ 
+#wall-note {
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+    background: black;
+    bottom: 180px;
+    position: absolute;
+    right: 270px;
+}
+
+/*Mirror*/
+#mirror {
+    width: 150px;
+    height: 200px;
+    border-radius: 75%;
+    border: 5px solid white;
+    background: black;
+    bottom: 150px;
+    position: absolute;
+    right: 400px;
+}
+
+#mirror-inner {
+    width: 120px;
+    height: 170px;
+    border-radius: 75%;
+    border: 5px solid white;
+    background: black;
+    bottom: 5%;
+    position: absolute;
+    right: 6%;
+    
+}
+
+/*Picture*/
+#picture {
+    width: 150px;
+    height: 120px;
+    border: 5px solid white;
+    background: black;
+    bottom: 180px;
+    position: absolute;
+    right: 655px;
+}
+
+/*Sofa*/
+#sofa-seat {
+    width: 300px;
+    height: 100px;
+    background: black;
+    border: 5px solid white;
+    position: absolute;
+    bottom: 0px;
+    right: 580px;
+}
+
+#sofa-frame {
+    width: 300px;
+    height: 100px;
+    border-radius: 75%;
+    background: black;
+    border: 5px solid white;
+    position: absolute;
+    bottom: 50px;
+    right: 580px;
+}
+
+#sofa-inner-seat {
+    width: 200px;
+    height: 50px;
+    background: black;
+    border: 2px solid white;
+    position: absolute; 
+    right: 15%;
+}
+
+/*Light*/
+#light-top {
+    width: 50px;
+    height: 0; 
+    border-bottom: 50px solid white;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    position: absolute;
+    right: 900px;
+    bottom: 260px;
+}
+
+#light-bottom {
+    width: 15px;
+    height: 258px;
+    background: black;
+    border: 2px solid white;
+    position: absolute;
+    right: 940px;
+    bottom: 0px;
+}
+
+#on-off-light-rope {
+    width: 5px;
+    height: 150px;
+    background: white;
+    position: absolute;
+    right: 920px;
+    bottom: 110px;
+}
+
+
+
+
+
