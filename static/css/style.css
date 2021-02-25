@@ -47,9 +47,8 @@ includes: handle, keypad*/
     width: 25px;
     height: 40px;
     border: 2px solid white;
-    background: black;
     position: absolute;
-    bottom: 32%;
+    bottom: 37%;
     left: 3%;
 }
 
@@ -57,11 +56,11 @@ includes: handle, keypad*/
     width: 20px;
     height: 5px;
     border: 1px solid white;
-    background: black;
     position: absolute;
     left: 1%;
     top: 3%;
 }
+/* 
 
 #pad {
     width: 20px;
@@ -69,8 +68,20 @@ includes: handle, keypad*/
     border: 1px solid white;
     position: absolute;
     left: 1%;
-    top: 15%;
+    top: 17%;
+} */
+
+.keypad {
+    width: 20px;
+    height: 28px;
+    border: 1px solid white;
+    position: absolute;
+    top: 19%;
+    left: 1%;
+
 }
+
+
 
 
 /*Notes
@@ -88,6 +99,7 @@ p {
     bottom: 180px;
     position: absolute;
     right: 270px;
+    color: black;
 }
 
 /*Mirror*/

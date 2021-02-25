@@ -5,15 +5,19 @@
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
+    
     <div id="door">
         <div id="handle"></div>
         <div id="keypad">
+            <img class="keypad" src="static/images/keypad.png">
             <div id="input"></div>
-            <div id="pad"></div>
+            <!-- <div id="pad">
+                
+            </div> -->
         </div>
     </div>
-    <div id="wall-note">
-        <p>WALL NOTE</p>
+    <div>
+        <p id="wall-note">C A</p>
     </div>
     <div id="mirror">
         <div id="mirror-inner">
@@ -29,9 +33,9 @@
     </div>
     <div id="light-top"></div>  
     <div id="light-bottom"></div> 
-    <div id="on-off-light-rope"></div>
+    <div id="on-off-light-rope" onclick="onOffLight()"></div>
  
 
-    <script src="index.js"></script>
+    <script src="static/js/index.js"></script>
 </body>
 </html>
