@@ -21,20 +21,21 @@
             <p id="wall-note">C A</p>
         </div>
         <!-- Mirror -->
-        <div onmouseover="mirrorMouseOver()" onmouseout="mirrorMouseOut()" id="mirror">
+        <div onclick="openMirror()" onmouseover="mirrorMouseOver()" onmouseout="mirrorMouseOut()" id="mirror">
             <div id="mirror-inner">
                 <img class="mirror" src="static/images/mirror.png">
             </div>
         </div>
         <!-- Picture -->
-        <div id="picture" onclick="movePicture()" onmouseover="pictureMouseOver()" onmouseout="pictureMouseOut()">
+        <div id="picture" onmouseover="pictureMouseOver()" onmouseout="pictureMouseOut()">
             <img class="picture" src="static/images/picture2.png">
         </div>
         <!-- Sofa -->
         <div id="sofa-frame"></div>
         <div id="sofa-seat">
             <div id="sofa-inner-seat"></div>
-            <div id="pillow" onmouseover="pillowMouseOver()" onmouseout="pillowMouseOut()"></div>
+            <div id="pillow" onclick="movePillow()" onmouseover="pillowMouseOver()" onmouseout="pillowMouseOut()"></div>
+            <div id="sofa-note">D O</div>
         </div>
         <!-- Light -->
         <div>
