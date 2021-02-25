@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Escape room</title>
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
+
 <body>
-    
-    <div id="door">
-        <div id="handle"></div>
-        <div id="keypad">
-            <img class="keypad" src="static/images/keypad.png">
-            <div id="input"></div>
-            <!-- <div id="pad">
-                
-            </div> -->
+    <div id="container">
+        <!-- Door -->
+        <div id="door">
+            <div id="handle"></div>
+            <div id="keypad" onmouseover="keypadMouseOver()" onmouseout="keypadMouseOut()">
+                <img class="keypad" src="static/images/keypad.png">
+                <div id="input"></div>
+            </div>
         </div>
-    </div>
-    <div>
-        <p id="wall-note">C A</p>
-    </div>
-    <div id="mirror">
-        <div id="mirror-inner">
-            <img class="mirror" src="static/images/mirror.png">
+        <!-- Notes -->
+        <div>
+            <p id="wall-note">C A</p>
         </div>
+        <!-- Mirror -->
+        <div onmouseover="mirrorMouseOver()" onmouseout="mirrorMouseOut()" id="mirror">
+            <div id="mirror-inner">
+                <img class="mirror" src="static/images/mirror.png">
+            </div>
+        </div>
+        <!-- Picture -->
+        <div id="picture" onclick="movePicture()" onmouseover="pictureMouseOver()" onmouseout="pictureMouseOut()">
+            <img class="picture" src="static/images/picture2.png">
+        </div>
+        <!-- Sofa -->
+        <div id="sofa-frame"></div>
+        <div id="sofa-seat">
+            <div id="sofa-inner-seat"></div>
+            <div id="pillow" onmouseover="pillowMouseOver()" onmouseout="pillowMouseOut()"></div>
+        </div>
+        <!-- Light -->
+        <div>
+        <div id="light-top"></div>
+        <div id="light-bottom"></div>
+        <div id="on-off-light-rope" onclick="onOffLight()" onmouseover="lightMouseOver()" onmouseout="lightMouseOut()"></div>
     </div>
-    <div id="picture">
-        <img class="picture" src="static/images/picture2.png">
-    </div> 
-    <div id="sofa-frame"></div> 
-    <div id="sofa-seat">
-        <div id="sofa-inner-seat"></div>
-    </div>
-    <div id="light-top"></div>  
-    <div id="light-bottom"></div> 
-    <div id="on-off-light-rope" onclick="onOffLight()"></div>
- 
 
     <script src="static/js/index.js"></script>
 </body>
+
 </html>
