@@ -18,6 +18,8 @@ function onOffLight() {
         document.getElementById('light-top').style.borderBottomColor = 'orchid';
         document.getElementById('light-bottom').style.borderTopColor = 'orchid';
         document.getElementById('wall-note').style.color = 'orchid';
+        document.getElementById('wall-note').style.opacity = '1';
+        document.getElementById('fish').src="static/images/fish_get_up.png"; 
         // document.getElementById('pillow').style.borderColor = 'orchid';
         }else{
             document.getElementById('light-top').style.borderBottomColor = 'white';
@@ -25,7 +27,9 @@ function onOffLight() {
             // document.getElementById('mirror').style.borderColor = 'white';
             // document.getElementById('picture').style.borderColor = 'white';
             // document.getElementById('keypad').style.borderColor = 'white';
-            document.getElementById('wall-note').style.color = 'black';
+            // document.getElementById('wall-note').style.color = 'black';
+            document.getElementById('wall-note').style.opacity = '0';
+            document.getElementById('fish').src="static/images/fish_sleep.png"; 
             // document.getElementById('pillow').style.borderColor = 'white';
         }
       
@@ -76,7 +80,9 @@ function pillowMouseOut() {
 function movePillow() {
     if (document.getElementById('pillow').className == 'pillow') {
         document.getElementById('pillow').className = 'pillow-offset'
+        document.getElementById('sofa-note').style.color = 'orchid'
     } else {
         document.getElementById('pillow').className = 'pillow'
+        document.getElementById('sofa-note').style.color = 'white'
     }
 }
