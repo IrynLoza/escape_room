@@ -200,12 +200,20 @@ includes: wall***/
     height: 110px;
 }
 
-/* .picture-offset {
-    left: 5px;
-    top: 5px;
-    position: relative;
+.picture-offset {
+    left: 220px;
+    position: fixed;
  
-} */
+}
+
+#picture-note {
+    left: 380px;
+    bottom: 220px;
+    position: absolute;
+    color: white;
+    font: italic 15px sans-serif;
+    text-align: center;
+}
 
 /***Sofa***/
 #sofa-seat {

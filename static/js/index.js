@@ -64,9 +64,15 @@ function pictureMouseOut() {
     
 }
 
-// function movePicture() {
-//     document.getElementById('picture').className = 'picture-offset'
-// }
+function movePicture() {
+    if (document.getElementById('picture').className == 'picture') {
+        document.getElementById('picture').className = 'picture-offset'
+        document.getElementById('picture-note').style.color = 'orchid'
+    } else {
+        document.getElementById('picture').className = 'picture'
+        document.getElementById('picture-note').style.color = 'white'
+    }
+}
 
 /****SOFA****/
 function pillowMouseOver() {
