@@ -7,6 +7,15 @@ function keypadMouseOut() {
     document.getElementById('keypad').style.borderColor = 'white'
 }
 
+function zoomKeypad() { 
+   if (document.getElementById('hidden-keypad').style.opacity == 0) {
+    document.getElementById('hidden-keypad').style.opacity = 10;
+   } else {
+    document.getElementById('hidden-keypad').style.opacity = 0;
+   }
+   
+}
+
 
 /****LIGHT****/
 function onOffLight() {
@@ -52,6 +61,14 @@ function mirrorMouseOut() {
     document.getElementById('mirror').style.borderColor = 'white';
 }
 
+// function zoomMirror() { 
+//     if (document.getElementById('mirror').className != 'zoom-mirror') {
+//         document.getElementById('mirror').className = 'zoom-mirror';
+//     } else {
+//         document.getElementById('mirror').className = 'mirror';
+//     }
+    
+// }
 
 
 /****PICTURE****/

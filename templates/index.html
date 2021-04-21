@@ -10,11 +10,13 @@
     <div class="container">
         <!-- Door -->
         <div id="door">
+            
             <div id="handle"></div>
-            <div id="keypad" onmouseover="keypadMouseOver()" onmouseout="keypadMouseOut()">
+            <div id="keypad" onclick="zoomKeypad()" onmouseover="keypadMouseOver()" onmouseout="keypadMouseOut()">
                 <img class="keypad" src="static/images/keypad.png">
                 <div id="input"></div>
             </div>
+            
         </div>
         <!-- Table -->
         <!-- <div id="aquarium"></div> -->
@@ -30,10 +32,10 @@
         <div id="wall-note">C A</div>
         <div id="picture-note">A V O</div>
         <!-- Mirror -->
-        <div onclick="openMirror()" onmouseover="mirrorMouseOver()" onmouseout="mirrorMouseOut()" id="mirror">
+        <div id="mirror" onmouseover="mirrorMouseOver()" onmouseout="mirrorMouseOut()">
             <div id="mirror-inner">
                 <img class="mirror" src="static/images/mirror.png">
-            </div>
+            </div>           
         </div>
         <!-- Picture -->
         <div id="picture" onclick="movePicture()" onmouseover="pictureMouseOver()" onmouseout="pictureMouseOut()">
@@ -51,6 +53,12 @@
         <div id="light-top"></div>
         <div id="light-bottom"></div>
         <div id="on-off-light-rope" onclick="onOffLight()" onmouseover="lightMouseOver()" onmouseout="lightMouseOut()"></div>
+            <div id="hidden-keypad">
+                <input class="input" type="text">
+                <button class="enter" type="submit">ENTER</button>
+            <img class="active-keypad" src="static/images/keypad.png">
+        </div>
+    
     </div>
 
     <script src="static/js/index.js"></script>

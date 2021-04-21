@@ -90,6 +90,49 @@ includes: handle, keypad***/
 
 }
 
+/* .zoom-keypad {
+    zoom: 600%;
+    position: absolute;
+    top: 5px;
+    right: 250px;
+} */
+
+#hidden-keypad {
+    width: 700px;
+    height: 500px;
+    border: 2px solid white;
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+    opacity: 0;
+    background-color: #051217;
+    background-image: radial-gradient(circle, #071e26, #051217);
+}
+.active-keypad {
+    width: 300px;
+    height: 380px;
+    border: 1px solid white;
+    position: absolute;
+    top: 19%;
+    left: 20%;
+}
+
+.input {
+    width: 210px;
+    height: 38px;
+    top: 8%;
+    left: 21%;
+    position: absolute;
+}
+
+.enter {
+    width: 70px;
+    height: 45px;
+    top: 8%;
+    right: 36%;
+    position: absolute;
+}
+
 /***Table***/
 #table-top {
     width: 100px;
@@ -177,12 +220,29 @@ includes: wall***/
     
 }
 
+
+
 .mirror {
     position: absolute;
     border-radius: 75%;
     width: 120px;
     height: 170px;
 }
+
+/* .zoom-mirror {
+    zoom: 200%;
+    position: absolute;
+    top: 5px;
+    left: 250px;
+} */
+
+
+
+
+
+
+
+
 
 
 /***Picture***/
@@ -201,19 +261,23 @@ includes: wall***/
 }
 
 .picture-offset {
-    left: 220px;
-    position: fixed;
+    left: 20%;
+    position: absolute;
  
 }
 
 #picture-note {
-    left: 380px;
-    bottom: 220px;
+    width: 100px;
+    height: 100px;
+    bottom: 180px;
     position: absolute;
-    color: white;
+    right: 628px;
     font: italic 15px sans-serif;
     text-align: center;
+    
 }
+
+
 
 /***Sofa***/
 #sofa-seat {
