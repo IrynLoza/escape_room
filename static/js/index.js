@@ -10,12 +10,40 @@ function keypadMouseOut() {
 function zoomKeypad() { 
    if (document.getElementById('hidden-keypad').style.opacity == 0) {
     document.getElementById('hidden-keypad').style.opacity = 10;
+    document.getElementById('hidden-keypad').style.width = '700px';
+    document.getElementById('hidden-keypad').style.height = '500px';
+    document.getElementById('keypad-image').style.width = '300px';
+    document.getElementById('keypad-image').style.height = '380px';
    } else {
     document.getElementById('hidden-keypad').style.opacity = 0;
+    document.getElementById('hidden-keypad').style.width = '70px';
+    document.getElementById('hidden-keypad').style.height = '50px';
+    document.getElementById('keypad-image').style.width = '30px';
+    document.getElementById('keypad-image').style.height = '38px';
    }
+
    
 }
 
+
+// #hidden-keypad {
+//     width: 70px;
+//     height: 50px;
+//     border: 2px solid white;
+//     position: absolute;
+//     bottom: 5%;
+//     left: 15%;
+//     opacity: 0;
+//     background-color: #051217;
+//     background-image: radial-gradient(circle, #071e26, #051217);
+// }
+// .active-keypad {
+//     width: 300px;
+//     height: 380px;
+//     border: 1px solid white;
+//     position: absolute;
+//     top: 19%;
+//     left: 20%;
 
 /****LIGHT****/
 function onOffLight() {
